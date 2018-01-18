@@ -1,8 +1,9 @@
-package com.utilitiessavings.nvd3.client;
+package com.utilitiessavings.nvd3example.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.utilitiessavings.d3.client.D3;
 import com.utilitiessavings.d3.client.SvgHelper;
+import com.utilitiessavings.nvd3.client.NV;
 import com.utilitiessavings.nvd3.client.model.Chart;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.Element;

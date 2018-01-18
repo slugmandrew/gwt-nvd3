@@ -3,6 +3,4 @@
 
   <source path="d3/client" />
   <source path="nvd3/client" />
-
-  <entry-point class="com.utilitiessavings.nvd3.client.SampleEntryPoint" />
 </module>

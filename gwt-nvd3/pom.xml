@@ -2,17 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.utilitiessavings.nvd3</groupId>
+        <artifactId>gwt-nvd3-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>com.utilitiessavings.nvd3</groupId>
-    <artifactId>gwt-nvd3-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <artifactId>gwt-nvd3</artifactId>
+    <packaging>gwt-lib</packaging>
 
-    
-    <modules>
-        <module>gwt-nvd3</module>
-        <module>gwt-nvd3-example</module>
-    </modules>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -22,26 +20,41 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <groupId>com.google.jsinterop</groupId>
-                <artifactId>base</artifactId>
-                <version>1.0.0-RC1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.jsinterop</groupId>
-                <artifactId>jsinterop-annotations</artifactId>
-                <version>1.0.2</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.elemental2</groupId>
-                <artifactId>elemental2-dom</artifactId>
-                <version>1.0.0-RC1</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-user</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-dev</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.google.jsinterop</groupId>
+            <artifactId>base</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.jsinterop</groupId>
+            <artifactId>jsinterop-annotations</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.elemental2</groupId>
+            <artifactId>elemental2-dom</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>nvd3</artifactId>
+            <version>1.8.5</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -60,7 +73,6 @@
                 <extensions>true</extensions>
                 <configuration>
                     <moduleName>com.utilitiessavings.Nvd3</moduleName>
-                    <style>PRETTY</style>
                 </configuration>
             </plugin>
         </plugins>
