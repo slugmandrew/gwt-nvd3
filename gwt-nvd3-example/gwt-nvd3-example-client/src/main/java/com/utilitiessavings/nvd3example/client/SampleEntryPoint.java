@@ -28,7 +28,12 @@ public class SampleEntryPoint implements EntryPoint {
                     .y(MyData::getValue);
 
             D3.select("svg")
-                    .datum(new Object[] {NvWrapper.create("bugs filed", generateData())})
+                    .datum(new Object[] {
+                            NvWrapper.create("bugs filed", generateData()),
+                            NvWrapper.create("bugs fixed", generateData()),
+                            NvWrapper.create("bugs ignored", generateData()),
+                            NvWrapper.create("bugs something", generateData())
+                    })
                     .call(myChart);
 
             NV.utils.windowResize(myChart::update);

@@ -12,6 +12,9 @@
     <artifactId>gwt-nvd3-example-server</artifactId>
     <packaging>war</packaging>
 
+    <name>${groupId}:${artifactId}</name>
+    <description>Example server project combining the compiled client with NVD3 and D3 from webjars</description>
+
     <dependencies>
         <dependency>
             <groupId>com.utilitiessavings.nvd3</groupId>

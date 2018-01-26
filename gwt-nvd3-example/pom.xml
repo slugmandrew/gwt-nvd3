@@ -9,8 +9,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>gwt-nvd3-example-parent</artifactId>
+    <artifactId>gwt-nvd3-example</artifactId>
     <packaging>pom</packaging>
+    <name>${groupId}:${artifactId}</name>
+    <description>Example project showing the library, NVD3 and D3 working in a simple multi-module application</description>
 
     <modules>
         <module>gwt-nvd3-example-client</module>

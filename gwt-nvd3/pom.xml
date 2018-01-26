@@ -10,6 +10,8 @@
 
     <artifactId>gwt-nvd3</artifactId>
     <packaging>gwt-lib</packaging>
+    <name>${groupId}:${artifactId}</name>
+    <description>NVD3 wrapper library for GWT</description>
 
     <dependencyManagement>
         <dependencies>

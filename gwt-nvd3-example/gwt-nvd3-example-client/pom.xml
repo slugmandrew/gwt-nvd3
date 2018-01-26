@@ -11,30 +11,28 @@
 
     <artifactId>gwt-nvd3-example-client</artifactId>
     <packaging>gwt-app</packaging>
+    <name>${groupId}:${artifactId}</name>
+    <description>Example client project built with the wrapper library</description>
 
     <dependencies>
         <dependency>
             <groupId>com.utilitiessavings.nvd3</groupId>
             <artifactId>gwt-nvd3</artifactId>
             <version>${project.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-dev</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.google.elemental2</groupId>
             <artifactId>elemental2-dom</artifactId>
             <version>1.0.0-RC1</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
     
